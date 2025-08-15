@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <img src="img/apple_logo_PNG19674.png" alt="Logo" class="logo">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="navbarMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#services">Portfolio</a></li>
+            <li><a href="#contact">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home mulai -->
+    <section id="home">
+        <div class="home">
+            <img src="img/Apple-BKC-Retail-Store-Mumbai-India_first-look.jpg" alt="Logo" class="bg">
+            <h1>Welcome <span id="welcomeUser"></span> to Our Website</h1>
+            <p>This is a simple webpage with a navigation bar and a section.</p>
+        </div>
+    </section>
+    <!-- home selesai -->
+
+    <!-- Headquarters mulai -->
+    <section class="headquarters-section" id="profile">
+        <h2 class="section-title">Our Headquarters</h2>
+        <div class="branches-container">
+            <div class="branch-item" onclick="openModal('jakarta')">
+                <div class="branch-circle">
+                    <img src="img/apple-siap-bangun-pabrik-rp157-miliar-di-bandung-demi-jualan-iphone-16-0VRWSwHuI6.jpg" alt="Jakarta Office">
+                </div>
+                <span class="branch-name">Jakarta</span>
+            </div>
+            <div class="branch-item" onclick="openModal('bandung')">
+                <div class="branch-circle">
+                    <img src="img/R.jpeg" alt="Bandung Office">
+                </div>
+                <span class="branch-name">Bandung</span>
+            </div>
+            <div class="branch-item" onclick="openModal('surabaya')">
+                <div class="branch-circle">
+                    <img src="img/applestores_ny.jpg" alt="Surabaya Office">
+                </div>
+                <span class="branch-name">Surabaya</span>
+            </div>
+        </div>
+    </section>
+    <!-- Headquarters selesai -->
+
+    <!-- Modal Jakarta -->
+    <div id="modal-jakarta" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Jakarta Office</h3>
+                <button class="close-btn" onclick="closeModal('jakarta')">&times;</button>
+            </div>
+            <img src="img/apple-siap-bangun-pabrik-rp157-miliar-di-bandung-demi-jualan-iphone-16-0VRWSwHuI6.jpg" alt="Jakarta Office" class="modal-image">
+            <div class="modal-info">
+                <div class="info-item">
+                    <span class="info-label">Alamat:</span>
+                    <span>Jl. Sudirman No. 123, Jakarta Pusat 10220</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Telepon:</span>
+                    <span>+62 21 5555-0123</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span>jakarta@company.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Manager:</span>
+                    <span>Budi Santoso</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Jam Kerja:</span>
+                    <span>Senin - Jumat: 08.00 - 17.00 WIB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Bandung -->
+    <div id="modal-bandung" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Bandung Office</h3>
+                <button class="close-btn" onclick="closeModal('bandung')">&times;</button>
+            </div>
+            <img src="img/R.jpeg" alt="Bandung Office" class="modal-image">
+            <div class="modal-info">
+                <div class="info-item">
+                    <span class="info-label">Alamat:</span>
+                    <span>Jl. Asia Afrika No. 456, Bandung 40111</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Telepon:</span>
+                    <span>+62 22 5555-0456</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span>bandung@company.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Manager:</span>
+                    <span>Sari Indrawati</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Jam Kerja:</span>
+                    <span>Senin - Jumat: 08.00 - 17.00 WIB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Surabaya -->
+    <div id="modal-surabaya" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Surabaya Office</h3>
+                <button class="close-btn" onclick="closeModal('surabaya')">&times;</button>
+            </div>
+            <img src="img/applestores_ny.jpg" alt="Surabaya Office" class="modal-image">
+            <div class="modal-info">
+                <div class="info-item">
+                    <span class="info-label">Alamat:</span>
+                    <span>Jl. Pemuda No. 789, Surabaya 60271</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Telepon:</span>
+                    <span>+62 31 5555-0789</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span>surabaya@company.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Manager:</span>
+                    <span>Ahmad Wijaya</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Jam Kerja:</span>
+                    <span>Senin - Jumat: 08.00 - 17.00 WIB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- kontak mulai disini -->
+    <section id="contact">
+        <div class="container" id="mainView">
+            <div class="form-section">
+                <h1 class="message">MESSAGE US</h1>
+                
+                <form id="studentForm">
+                    <div class="form-group">
+                        <label for="nama">Nama :</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Nama">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tanggalLahir">Tanggal Lahir :</label>
+                        <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Jenis Kelamin :</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="jenisKelamin" value="Laki-Laki" required>
+                                Laki-Laki
+                            </label>
+                            <label>
+                                <input type="radio" name="jenisKelamin" value="Perempuan" required>
+                                Perempuan
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan :</label>
+                        <textarea id="pesan" name="pesan" placeholder="Pesan" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <div class="table-section">
+                <div class="table-container">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Tanggal Lahir</th>
+                                <th>Jenis Kelamin</th>
+                                <th>Pesan</th>
+                                <th>Profile</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td colspan="6" class="empty-state">Belum ada data yang dimasukkan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Modal -->
+        <div class="profile-modal" id="profileModal">
+            <div class="modal-content">
+                <button class="close-btn" onclick="closeProfileModal()">&times;</button>
+                <h2>Profile Details</h2>
+                <div id="profileDetails"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        Created by Rouf
+    </div>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="loginModal">
+        <div class="modal-content">
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm" onsubmit="handleLogin(event)">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <p class="switch-form">
+                    Don't have an account? <a href="#" onclick="toggleForm('register')">Register here</a>
+                </p>
+            </form>
+
+            <!-- Register Form -->
+            <form class="login-form" id="registerForm" style="display: none;" onsubmit="handleRegister(event)">
+                <h2>Register</h2>
+                <div class="form-group">
+                    <label for="regUsername">Username</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="login-btn">Register</button>
+                <p class="switch-form">
+                    Already have an account? <a href="#" onclick="toggleForm('login')">Login here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
